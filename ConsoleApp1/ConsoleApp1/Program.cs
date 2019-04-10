@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1
 {
-    class Program
+  public  class Program
     {
         static void Main(string[] args)
         {
@@ -12,5 +12,12 @@ namespace ConsoleApp1
             Console.Read();
             Console.Write("Merge testing the merge operation");
         }
+
+
+        public static string SayHello()
+        {
+            return "Hello";
+        }
+        
     }
 }
