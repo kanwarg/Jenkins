@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo $hostname'
+        sh 'env'
       }
     }
 
@@ -20,7 +20,7 @@ pipeline {
 
       }
       steps {
-        sh 'echo $hostname'
+        sh 'env'
       }
     }
 
