@@ -8,7 +8,19 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo hostname'
+        sh 'echo $hostname'
+      }
+    }
+
+    stage('test') {
+      agent {
+        node {
+          label 'jenkins-slave-test'
+        }
+
+      }
+      steps {
+        sh 'echo $hostname'
       }
     }
 
