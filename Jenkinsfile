@@ -11,7 +11,7 @@ pipeline {
         sh ''' ls
  hostname
  cd demo 
- ls'''
+ mvnw compile '''
       }
     }
 
