@@ -8,10 +8,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh ''' ls
- hostname
+        sh ''' hostname
  cd demo 
- mvn clean'''
+ ./mvnw spring0-boot run'''
       }
     }
 
