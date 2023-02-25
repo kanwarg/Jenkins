@@ -15,8 +15,7 @@ cd demo
 mvn clean
 mvn validate 
 mvn compile
-
- '''
+./mvnw spring-boot:run'''
       }
     }
 
