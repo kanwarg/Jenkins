@@ -12,7 +12,10 @@ pipeline {
 java --version 
 $JAVA_HOME
 cd demo 
- mvn clean
+mvn clean
+mvn validate 
+mvn compile
+
  '''
       }
     }
