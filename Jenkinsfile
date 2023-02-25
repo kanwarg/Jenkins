@@ -12,7 +12,7 @@ pipeline {
 java --version 
 $JAVA_HOME
 cd demo 
-chmod -R 777
+chmod -R 777 ./target 
 mvn clean
 mvn validate 
 mvn compile
