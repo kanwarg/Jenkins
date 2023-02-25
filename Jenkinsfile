@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh ''' 
-/demo/mvnw compile'''
+        sh ''' ls
+ hostname'''
       }
     }
 
