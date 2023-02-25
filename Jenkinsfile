@@ -8,10 +8,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh ''' hostname
- cd demo 
+        sh '''hostname
+java --version 
+echo $JAVA_HOME
+cd demo 
  mvn clean
- mvn compile'''
+ '''
       }
     }
 
