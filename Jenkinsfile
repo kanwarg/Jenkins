@@ -28,7 +28,7 @@ cd demo
         sh '''hostname
 cd demo
 ls -a
-mvn test '''
+./mvnw test '''
       }
     }
 
