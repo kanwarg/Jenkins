@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh ''' hostname
  cd demo 
+ mvn clean
  mvn compile'''
       }
     }
