@@ -16,6 +16,7 @@ cd demo
 mvn clean
 mvn validate 
 mvn compile
+ls
 chmod -R 777 ./target 
 ./mvnw spring-boot:run'''
       }
