@@ -17,6 +17,7 @@ mvn clean
 mvn validate 
 mvn compile
 ls
+chmod 777 ./mvnw
 chmod -R 777 target 
 ./mvnw spring-boot:run'''
       }
