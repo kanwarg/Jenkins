@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh ''' hostname
  cd demo 
- ./mvnw spring0-boot run'''
+ ./mvnw spring0-boot:run'''
       }
     }
 
