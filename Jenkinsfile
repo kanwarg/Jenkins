@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvnw compile'
+        sh '''cd demo 
+mvnw compile'''
       }
     }
 
