@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh ''' hostname
  cd demo 
- ./mvnw spring-boot:run'''
+ mvn compile'''
       }
     }
 
@@ -22,7 +22,9 @@ pipeline {
 
       }
       steps {
-        sh 'env'
+        sh '''hostname
+cd demo
+mvn test '''
       }
     }
 
