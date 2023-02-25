@@ -12,10 +12,11 @@ pipeline {
 java --version 
 $JAVA_HOME
 cd demo 
-chmod -R 777 ./target 
+
 mvn clean
 mvn validate 
 mvn compile
+chmod -R 777 ./target 
 ./mvnw spring-boot:run'''
       }
     }
