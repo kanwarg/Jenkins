@@ -16,10 +16,9 @@ cd demo
 mvn clean
 mvn validate 
 mvn compile
+mvn install
 ls
-chmod 777 ./mvnw
-chmod -R 777 target 
-./mvnw spring-boot:run'''
+'''
       }
     }
 
@@ -34,7 +33,7 @@ chmod -R 777 target
         sh '''hostname
 cd demo
 ls -a
-./mvnw test '''
+mvn test'''
       }
     }
 
