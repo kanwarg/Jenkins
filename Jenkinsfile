@@ -9,7 +9,9 @@ pipeline {
     stage('Build') {
       steps {
         sh ''' ls
- hostname'''
+ hostname
+ cd demo 
+ ls'''
       }
     }
 
