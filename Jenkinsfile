@@ -28,6 +28,7 @@ ls
 cd demo
 ls -a
 mvn test'''
+        junit '**/target/surefire-reports/TEST-*.xml'
       }
     }
 
