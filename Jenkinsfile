@@ -8,15 +8,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''echo hostname
-java --version 
-$JAVA_HOME
+        sh '''hostname
 cd demo 
-
-mvn clean
-mvn validate 
-mvn compile
-mvn install
+mvn -B -DskipTests clean package
 ls
 '''
       }
