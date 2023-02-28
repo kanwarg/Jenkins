@@ -27,7 +27,7 @@ ls
         sh '''hostname
 cd demo
 ls -a
-mvn test'''
+mvn  clean test'''
         junit '**/target/surefire-reports/TEST-*.xml'
       }
     }
